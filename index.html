@@ -67,8 +67,25 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
-        .student-info { padding: 20px 15px 10px; display: flex; justify-content: space-between; }
+        /* التعديل الأول هنا: تغيير طريقة التوزيع لتقريب الكلام من الصورة */
+        .student-info { 
+            padding: 20px 15px 10px; 
+            display: flex; 
+            justify-content: flex-start; /* بدل space-between عشان يبدأوا من اليمين */
+            gap: 15px; /* مسافة ثابتة وصغيرة بين الصورة والكلام */
+        }
+        .student-photo-container { text-align: center; }
         .student-photo { width: 90px; height: 110px; object-fit: cover; border-radius: 6px; }
+        
+        /* التعديل الثاني هنا: تقليل المسافة فوق التاريخ */
+        .academic-year { 
+            font-size: 13px; 
+            margin-top: 1px; /* كانت 4px، قللناها عشان تقرب من الصورة */
+            font-weight: bold; 
+        }
+
+        /* شلنا flex-grow عشان الكلام مياخدش مساحة زيادة على الفاضي */
+        .text-info { text-align: right; /* flex-grow: 1; تم الحذف */ }
         
         .student-name { 
             font-size: 24px; 
@@ -96,7 +113,6 @@
         .nav-item { font-size: 24px; color: #606770; background: none; border: none; }
         .nav-item.active { color: #1a56db; }
         
-        /* تم حذف كود الصورة القديم لأنه لم يعد مستخدماً */
     </style>
 </head>
 <body>
@@ -126,7 +142,7 @@
                 <div class="student-info">
                     <div class="student-photo-container">
                         <img src="personal-photo.jpg" alt="Student" class="student-photo">
-                        <div style="font-size: 13px; margin-top: 4px; font-weight: bold; text-align: center;">2025-2026</div>
+                        <div class="academic-year">2025-2026</div>
                     </div>
                     <div class="text-info">
                         <div class="student-name">اسلام خالد عبدالله<br>محمد</div>
