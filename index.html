@@ -67,35 +67,54 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
-        /* التعديل الأول هنا: تغيير طريقة التوزيع لتقريب الكلام من الصورة */
+        /* ----- التعديلات الجذرية لمنطقة الصورة والكلام ----- */
         .student-info { 
-            padding: 20px 15px 10px; 
+            padding: 15px 15px 10px; /* تقليل المسافة العلوية لرفع الكتلة بالكامل */
             display: flex; 
-            justify-content: flex-start; /* بدل space-between عشان يبدأوا من اليمين */
-            gap: 15px; /* مسافة ثابتة وصغيرة بين الصورة والكلام */
+            align-items: flex-start; 
         }
-        .student-photo-container { text-align: center; }
-        .student-photo { width: 90px; height: 110px; object-fit: cover; border-radius: 6px; }
         
-        /* التعديل الثاني هنا: تقليل المسافة فوق التاريخ */
+        .student-photo-container { 
+            text-align: center; 
+            width: 80px; /* تحديد عرض ثابت للصورة */
+            margin-top: -8px; /* رفع الصورة للأعلى حاجة بسيطة */
+        }
+        
+        .student-photo { 
+            width: 100%; 
+            height: 100px; /* تصغير ارتفاع الصورة */
+            object-fit: cover; 
+            border-radius: 6px; 
+        }
+        
         .academic-year { 
             font-size: 13px; 
-            margin-top: 1px; /* كانت 4px، قللناها عشان تقرب من الصورة */
+            margin-top: 2px; /* تقريب التاريخ من الصورة جداً */
             font-weight: bold; 
         }
 
-        /* شلنا flex-grow عشان الكلام مياخدش مساحة زيادة على الفاضي */
-        .text-info { text-align: right; /* flex-grow: 1; تم الحذف */ }
+        .text-info { 
+            flex: 1; /* جعل النص يأخذ باقي المساحة المتاحة */
+            text-align: right; /* محاذاة النص لليمين (تجاه الصورة) */
+            padding-right: 12px; /* المسافة الثابتة بين الكلام والصورة */
+            padding-top: 5px; /* تظبيط مستوى الكلام مع الصورة */
+        }
         
         .student-name { 
             font-size: 24px; 
             font-weight: 600; 
-            margin-bottom: 8px; 
+            margin-bottom: 5px; /* تقليل المسافة بين الاسم والتفاصيل */
             line-height: 1.1; 
             text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.15);
         }
 
-        .student-details { font-size: 14px; opacity: 0.9; line-height: 1.8; font-weight: 600;}
+        .student-details { 
+            font-size: 14px; 
+            opacity: 0.9; 
+            line-height: 1.6; /* تقليل المسافة بين السطور */
+            font-weight: 600;
+        }
+        /* --------------------------------------------------- */
 
         .numbers-section { text-align: center; padding: 5px 15px 20px; }
         .id-number { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
@@ -139,6 +158,7 @@
                     <img src="logo.jpg" alt="Logo" class="card-header-logo">
                     <span class="card-header-text">اداره ونظم المعلومات بالمصرية لل...</span>
                 </div>
+                
                 <div class="student-info">
                     <div class="student-photo-container">
                         <img src="personal-photo.jpg" alt="Student" class="student-photo">
@@ -179,4 +199,3 @@
 </script>
 </body>
 </html>
-
