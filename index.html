@@ -9,7 +9,7 @@
     <meta property="og:title" content="البطاقة الذكية - اسلام خالد">
     <meta property="og:image" content="logo.jpg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
@@ -67,20 +67,18 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
-        /* ----- التعديلات الجديدة للرفع وتقريب الكلام ----- */
         .student-info { 
             padding: 20px 15px 10px; 
             display: flex; 
             align-items: flex-start; 
-            justify-content: flex-start; /* دي اللي بتجبرهم يبدأوا من اليمين مع بعض */
-            gap: 15px; /* دي المسافة الثابتة بين الصورة والكلام */
+            justify-content: flex-start; 
+            gap: 15px; 
         }
         .student-photo-container { 
             text-align: center; 
             width: 90px; 
-            margin-top: -15px; /* دي اللي هترفع الصورة لفوق حبة */
+            margin-top: -15px; 
         }
-        
         .student-photo { 
             width: 100%; height: 110px; 
             object-fit: cover; border-radius: 6px; 
@@ -93,9 +91,9 @@
         .text-info { 
             text-align: right; 
             flex: 1; 
-            margin-top: 5px; /* علشان الكلام يبقى ماشي مع مستوى الصورة بعد ما اترفعت */
+            margin-top: 5px; 
+            padding-left: 45px; /* التعديل هنا: عملنا مساحة فاضية كبيرة على الشمال */
         }
-        /* --------------------------------------------------- */
 
         .student-name { 
             font-size: 24px; font-weight: 600; margin-bottom: 10px; 
@@ -105,11 +103,18 @@
 
         .numbers-section { 
             text-align: center; 
-            padding: 5px 15px 45px; /* المحافظة على طول الكارت */
+            padding: 5px 15px 45px; 
         }
-        .id-number { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
-        .live-date, .live-time { font-weight: 700; }
-        .live-time { font-size: 28px; }
+        .id-number { font-size: 24px; font-weight: 700; margin-bottom: 10px; letter-spacing: 1px;}
+        
+        /* التعديل هنا: كبرنا التاريخ واديناه سُمك عريض جداً (800) */
+        .live-date { 
+            font-size: 22px; 
+            font-weight: 800; 
+            margin-bottom: 5px; 
+            letter-spacing: 1px;
+        }
+        .live-time { font-size: 28px; font-weight: 800; }
 
         .card-footer-section { background-color: #477be5; height: 25px; width: 100%; }
         
