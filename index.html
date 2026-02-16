@@ -51,11 +51,10 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
         }
 
-        /* التعديل الأساسي هنا: زيادة الحشو السفلي لتطويل البطاقة */
+        /* تم إزالة الحشو السفلي من هنا علشان الشريط الغامق يلزق تحت */
         .id-card {
             border-radius: 15px 15px 0 0; color: white; overflow: hidden;
             background-color: #6295EC; display: flex; flex-direction: column;
-            padding-bottom: 30px; /* دي اللي هتعمل المساحة الفاضية تحت */
         }
         
         .card-header-section {
@@ -69,45 +68,40 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
-        /* رجعنا إعدادات الصورة والبيانات لوضعها الطبيعي */
         .student-info { 
-            padding: 20px 15px 10px; /* رجعنا المسافة العلوية */
-            display: flex; align-items: flex-start; justify-content: space-between; /* رجعنا التوزيع الطبيعي */
+            padding: 20px 15px 10px; 
+            display: flex; align-items: flex-start; justify-content: space-between; 
         }
         .student-photo-container { 
-            text-align: center; 
-            width: auto; /* شلنا العرض الثابت */
-            margin-top: 0; /* شلنا الرفع */
+            text-align: center; width: auto; margin-top: 0; 
         }
         
         .student-photo { 
-            width: 90px; /* رجعنا الحجم الأصلي */
-            height: 110px; /* رجعنا الطول الأصلي */
+            width: 90px; height: 110px; 
             object-fit: cover; border-radius: 6px; 
             display: block; 
         }
         .academic-year { 
-            font-size: 13px; 
-            margin-top: 0px; 
-            font-weight: bold; 
+            font-size: 13px; margin-top: 0px; font-weight: bold; 
         }
 
-        .text-info { 
-            text-align: right; flex-grow: 1; padding-right: 15px; /* رجعنا المسافات الطبيعية */
-        }
+        .text-info { text-align: right; flex-grow: 1; padding-right: 15px; }
         .student-name { 
-            font-size: 24px; font-weight: 600; margin-bottom: 10px; /* رجعنا المسافة الطبيعية */
+            font-size: 24px; font-weight: 600; margin-bottom: 10px; 
             line-height: 1.1; text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.15);
         }
-        .student-details { 
-            font-size: 14px; opacity: 0.9; line-height: 1.8; font-weight: 600;
-        }
+        .student-details { font-size: 14px; opacity: 0.9; line-height: 1.8; font-weight: 600; }
 
-        .numbers-section { text-align: center; padding: 5px 15px 20px; }
+        /* التعديل هنا: زودنا المسافة السفلية علشان تطول الكارت وتزق الشريط لتحت */
+        .numbers-section { 
+            text-align: center; 
+            padding: 5px 15px 45px; /* رفعناها لـ 45 علشان تعمل المساحة الفاضية المطلوبة */
+        }
         .id-number { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
         .live-date, .live-time { font-weight: 700; }
         .live-time { font-size: 28px; }
 
+        /* الشريط الغامق هيفضل في مكانه بالظبط في قاع البطاقة */
         .card-footer-section { background-color: #477be5; height: 25px; width: 100%; }
         
         .white-base { background-color: #fff; min-height: 90px; border-radius: 0 0 15px 15px; }
@@ -163,6 +157,7 @@
                     <div class="live-date" id="dateDisplay"></div>
                     <div class="live-time" id="timeDisplay"></div>
                 </div>
+                
                 <div class="card-footer-section"></div>
             </div>
             
