@@ -72,12 +72,14 @@
             display: flex; 
             align-items: flex-start; 
             justify-content: flex-start; 
-            gap: 12px; /* قللنا المسافة علشان نزق الكلام ناحية اليمين (للصورة) */
+            gap: 15px; 
         }
+        
+        /* التعديل الأول: جعل الصورة "أرفع" (أقل عرضاً) */
         .student-photo-container { 
             text-align: center; 
-            width: 90px; 
-            margin-top: -15px; 
+            width: 72px; /* عرض أرفع علشان يلم الصورة */
+            margin-top: 0px; /* رجعنا المستوى الطبيعي */
             flex-shrink: 0; 
         }
         .student-photo { 
@@ -91,13 +93,12 @@
 
         .text-info { 
             text-align: right; 
-            margin-top: 5px;
-            padding-right: 5px; /* زقة إضافية لليمين */
+            margin-top: 5px; 
+            padding-right: 0px; 
         }
 
-        /* تصغير الاسم والتفاصيل */
         .student-name { 
-            font-size: 21px; /* صغرناه خالص عن الأول */
+            font-size: 21px; 
             font-weight: 700; 
             margin-bottom: 6px; 
             line-height: 1.1; 
@@ -105,7 +106,7 @@
             white-space: nowrap; 
         }
         .student-details { 
-            font-size: 13px; /* صغرنا التفاصيل */
+            font-size: 13px; 
             opacity: 0.9; line-height: 1.6; font-weight: 600; 
             white-space: nowrap; 
         }
@@ -115,19 +116,19 @@
             padding: 10px 15px 45px; 
         }
         
-        /* التاريخ والوقت والـ ID كبار زي ما هما من غير أي تغيير */
+        /* التعديل التاني والتالت: تقليل امتداد الـ ID ورفع التاريخ ناحيته */
         .id-number { 
-            font-size: 26px; 
+            font-size: 24px; 
             font-weight: 700; 
-            margin-bottom: 12px; 
-            letter-spacing: 1px;
+            margin-bottom: 2px; /* شلنا المسافة اللي تحته علشان التاريخ يترفع له */
+            letter-spacing: -0.5px; /* لمينا امتداد الحروف */
         }
         
         .live-date { 
             font-size: 24px; 
             font-weight: 700; 
             margin-bottom: 8px; 
-            letter-spacing: 1px;
+            letter-spacing: 0px;
         }
         
         .live-time { 
