@@ -9,7 +9,7 @@
     <meta property="og:title" content="البطاقة الذكية - اسلام خالد">
     <meta property="og:image" content="logo.jpg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
@@ -67,6 +67,7 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
+        /* تظبيط كتلة الصورة والبيانات لتطابق الأصل */
         .student-info { 
             padding: 20px 15px 10px; 
             display: flex; 
@@ -86,40 +87,54 @@
             display: block; 
         }
         .academic-year { 
-            font-size: 13px; margin-top: 0px; font-weight: bold; 
+            font-size: 14px; margin-top: 0px; font-weight: bold; 
         }
 
         .text-info { 
             text-align: right; 
-            margin-top: 5px; 
+            margin-top: 5px;
+            /* هنسيب المساحة تتوزع براحتها علشان الفراغ يظهر شمال */
         }
 
+        /* تكبير حجم الاسم والتفاصيل */
         .student-name { 
-            font-size: 24px; font-weight: 700; margin-bottom: 10px; 
-            line-height: 1.1; text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.15);
+            font-size: 26px; /* كبرنا الحجم لـ 26 */
+            font-weight: 700; 
+            margin-bottom: 8px; 
+            line-height: 1.05; /* لمينا السطور أكتر */
+            text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.15);
             white-space: nowrap; 
         }
         .student-details { 
-            font-size: 14px; opacity: 0.9; line-height: 1.8; font-weight: 600; 
+            font-size: 15px; /* كبرنا التفاصيل شوية */
+            opacity: 0.9; line-height: 1.8; font-weight: 600; 
             white-space: nowrap; 
         }
 
         .numbers-section { 
             text-align: center; 
-            padding: 5px 15px 45px; 
+            padding: 10px 15px 45px; /* زودنا المسافة العلوية شوية */
         }
-        .id-number { font-size: 24px; font-weight: 700; margin-bottom: 10px; letter-spacing: 1px;}
         
-        /* التعديل هنا: كبرنا حجم التاريخ سنة بسيطة زي ما طلبت */
-        .live-date { 
-            font-size: 22px; /* رفعناها لـ 22 علشان تكون أوضح */
+        /* تكبير الأحجام بشكل ملحوظ جداً لملء الفراغ */
+        .id-number { 
+            font-size: 26px; /* كان 24 */
             font-weight: 700; 
-            margin-bottom: 5px; 
+            margin-bottom: 12px; 
             letter-spacing: 1px;
         }
         
-        /* الساعة فضلت زي ما هي من غير أي تغيير */
-        .live-time { font-size: 28px; font-weight: 700; }
+        .live-date { 
+            font-size: 24px; /* كبرنا التاريخ جداً ليكون واضح */
+            font-weight: 700; 
+            margin-bottom: 8px; 
+            letter-spacing: 1px;
+        }
+        
+        .live-time { 
+            font-size: 32px; /* كبرنا الساعة لتكون أضخم عنصر */
+            font-weight: 800; 
+        }
 
         .card-footer-section { background-color: #477be5; height: 25px; width: 100%; }
         
