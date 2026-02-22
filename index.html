@@ -67,13 +67,12 @@
             white-space: nowrap; word-spacing: 4px; letter-spacing: 0.5px;
         }
 
-        /* تظبيط كتلة الصورة والبيانات لتطابق الأصل */
         .student-info { 
             padding: 20px 15px 10px; 
             display: flex; 
             align-items: flex-start; 
             justify-content: flex-start; 
-            gap: 15px; 
+            gap: 12px; /* قللنا المسافة علشان نزق الكلام ناحية اليمين (للصورة) */
         }
         .student-photo-container { 
             text-align: center; 
@@ -93,46 +92,46 @@
         .text-info { 
             text-align: right; 
             margin-top: 5px;
-            /* هنسيب المساحة تتوزع براحتها علشان الفراغ يظهر شمال */
+            padding-right: 5px; /* زقة إضافية لليمين */
         }
 
-        /* تكبير حجم الاسم والتفاصيل */
+        /* تصغير الاسم والتفاصيل */
         .student-name { 
-            font-size: 26px; /* كبرنا الحجم لـ 26 */
+            font-size: 21px; /* صغرناه خالص عن الأول */
             font-weight: 700; 
-            margin-bottom: 8px; 
-            line-height: 1.05; /* لمينا السطور أكتر */
+            margin-bottom: 6px; 
+            line-height: 1.1; 
             text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.15);
             white-space: nowrap; 
         }
         .student-details { 
-            font-size: 15px; /* كبرنا التفاصيل شوية */
-            opacity: 0.9; line-height: 1.8; font-weight: 600; 
+            font-size: 13px; /* صغرنا التفاصيل */
+            opacity: 0.9; line-height: 1.6; font-weight: 600; 
             white-space: nowrap; 
         }
 
         .numbers-section { 
             text-align: center; 
-            padding: 10px 15px 45px; /* زودنا المسافة العلوية شوية */
+            padding: 10px 15px 45px; 
         }
         
-        /* تكبير الأحجام بشكل ملحوظ جداً لملء الفراغ */
+        /* التاريخ والوقت والـ ID كبار زي ما هما من غير أي تغيير */
         .id-number { 
-            font-size: 26px; /* كان 24 */
+            font-size: 26px; 
             font-weight: 700; 
             margin-bottom: 12px; 
             letter-spacing: 1px;
         }
         
         .live-date { 
-            font-size: 24px; /* كبرنا التاريخ جداً ليكون واضح */
+            font-size: 24px; 
             font-weight: 700; 
             margin-bottom: 8px; 
             letter-spacing: 1px;
         }
         
         .live-time { 
-            font-size: 32px; /* كبرنا الساعة لتكون أضخم عنصر */
+            font-size: 32px; 
             font-weight: 800; 
         }
 
