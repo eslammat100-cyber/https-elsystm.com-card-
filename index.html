@@ -75,11 +75,10 @@
             gap: 15px; 
         }
         
-        /* التعديل الأول: جعل الصورة "أرفع" (أقل عرضاً) */
         .student-photo-container { 
             text-align: center; 
-            width: 72px; /* عرض أرفع علشان يلم الصورة */
-            margin-top: 0px; /* رجعنا المستوى الطبيعي */
+            width: 72px; 
+            margin-top: 0px; 
             flex-shrink: 0; 
         }
         .student-photo { 
@@ -116,18 +115,18 @@
             padding: 10px 15px 45px; 
         }
         
-        /* التعديل التاني والتالت: تقليل امتداد الـ ID ورفع التاريخ ناحيته */
+        /* التعديلات الجذرية للـ ID والتاريخ والساعة */
         .id-number { 
-            font-size: 24px; 
-            font-weight: 700; 
-            margin-bottom: 2px; /* شلنا المسافة اللي تحته علشان التاريخ يترفع له */
-            letter-spacing: -0.5px; /* لمينا امتداد الحروف */
+            font-size: 26px; 
+            font-weight: 800; /* خط تخين جداً */
+            margin-bottom: 0px; /* لزقنا التاريخ تحته بالظبط */
+            letter-spacing: -1px; /* ضغطنا الأرقام علشان تاخد مساحة أقل */
         }
         
         .live-date { 
             font-size: 24px; 
             font-weight: 700; 
-            margin-bottom: 8px; 
+            margin-bottom: 15px; /* مسافة تعادل سطر قبل الساعة */
             letter-spacing: 0px;
         }
         
